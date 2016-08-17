@@ -1,5 +1,8 @@
-Smartbots PHP API
-======
+#Smartbots PHP API
+
+---
+
+##Getting Started
 
 This API kit has been created from scratch to ease development of your online web services which integrate with SmartBots for SecondLife.
 
@@ -56,4 +59,39 @@ At the end of this section, your code could look a little something like this:
 	$bot->setup($apiKey, $botName, $botAccessCode); // Pass the setup variables to the API.
 ?>
 ```
+
+---
+
+##Performing Actions
+
+We've made it really easy to perform actions with your SmartBot, for example it's as simple as `$bot->login();` to log in your bot! We'll take a look at all of the different actions and the different ways in which you can use them below:
+
+---
+
+To send an Instant Message from your bot, you use the `im()` method on your `$bot` variable. For example the below will send an IM to GTASkinCentral Resident with a message of "Hello world!".
+
+```php
+$bot->im("GTASkinCentral Resident", "Hello World!"); // Send an IM to GTASkinCentral Resident.
+```
+
+---
+
+If you need to see the response that the bot gives after the action has been executed, it's as simple as calling the `response()` method. This method returns the result as an array, however if you would like the raw string format, directly from the SmartBots server, simply use `response(TRUE)` instead.
+```php
+print_r($bot->response()); // Get the bot's response in array format.
+```
+```php
+Array (
+	[result] => OK
+	[action] => im
+)
+```
+or in string format
+```php
+echo $bot->response(TRUE); // Get the bot's response in query string format.
+```
+```php
+result=OK&action=im
+```
+
 
