@@ -6,6 +6,8 @@
 	- [Multiple Bots](#Multiple-Bots)
 	- [Available Actions](#Available-Actions)
 - [Demo](http://renderworks-sl.com/smartbots_php_api#Live_Demo)
+- [Support](http://renderworks-sl.com/smartbots_php_api/#Support)
+- [Licensing](http://renderworks-sl.com/smartbots_php_api/#License)
 	
 ##<a name="Getting-Started">Getting Started</a>
 
