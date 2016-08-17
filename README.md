@@ -1,13 +1,13 @@
 #Smartbots PHP API
 
 - [Smartbots PHP API](#)
-	- [Getting Started](#Getting Started)
-	- [Performing Actions](#Performing Actions)
-	- [Multiple Bots](#Multiple Bots)
-	- [Available Actions](#Available Actions)
+	- [Getting Started](#Getting-Started)
+	- [Performing Actions](#Performing-Actions)
+	- [Multiple Bots](#Multiple-Bots)
+	- [Available Actions](#Available-Actions)
 - [Demo](http://renderworks-sl.com/smartbots_php_api#Live_Demo)
 	
-##Getting Started
+<a name="Getting-Started"></a>##Getting Started
 
 This API kit has been created from scratch to ease development of your online web services which integrate with SmartBots for SecondLife.
 
