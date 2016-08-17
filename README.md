@@ -7,7 +7,7 @@
 	- [Available Actions](#Available-Actions)
 - [Demo](http://renderworks-sl.com/smartbots_php_api#Live_Demo)
 	
-<a name="Getting-Started"></a>##Getting Started
+##<a name="Getting-Started">Getting Started</a>
 
 This API kit has been created from scratch to ease development of your online web services which integrate with SmartBots for SecondLife.
 
@@ -67,7 +67,7 @@ At the end of this section, your code could look a little something like this:
 
 ---
 
-##Performing Actions
+##<a name="Performing-Actions">Performing Actions</a>
 
 We've made it really easy to perform actions with your SmartBot, for example it's as simple as `$bot->login();` to log in your bot! We'll take a look at all of the different actions and the different ways in which you can use them below:
 
@@ -155,7 +155,7 @@ At the end of this section, your code could look a little something like this:
 
 ---
 
-##Multiple Bots
+##<a name="Multiple-Bots">Multiple Bots</a>
 
 If you're familiar with Object-Orientated PHP, you've most likely already worked this out, however you can actually have multiple bots interacting with each other at once, in one single script! The below code demonstrates how two bots will IM each other, and then echo their responses to the screen!
 
@@ -194,7 +194,7 @@ If you're familiar with Object-Orientated PHP, you've most likely already worked
 
 ---
 
-##Available Actions
+##<a name="Available-Actions">Available Actions</a>
 
 This section shows all of the available actions which you can use with this API. Currently, all API actions available from SmartBots can be used with this API.
 
