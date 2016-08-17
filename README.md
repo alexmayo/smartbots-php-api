@@ -1,10 +1,10 @@
 #Smartbots PHP API
 
 - [Smartbots PHP API](#)
-	- [Getting Started](#)
-	- [Performing Actions](#)
-	- [Multiple Bots](#)
-	- [Available Actions](#)
+	- [Getting Started](#Getting Started)
+	- [Performing Actions](#Performing Actions)
+	- [Multiple Bots](#Multiple Bots)
+	- [Available Actions](#Available Actions)
 - [Demo](http://renderworks-sl.com/smartbots_php_api#Live_Demo)
 	
 ##Getting Started
