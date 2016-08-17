@@ -1,7 +1,12 @@
 #Smartbots PHP API
 
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
-
+- [Smartbots PHP API](#)
+	- [Getting Started](#)
+	- [Performing Actions](#)
+	- [Multiple Bots](#)
+	- [Available Actions](#)
+- [Demo](http://renderworks-sl.com/smartbots_php_api#Live_Demo)
+	
 ##Getting Started
 
 This API kit has been created from scratch to ease development of your online web services which integrate with SmartBots for SecondLife.
