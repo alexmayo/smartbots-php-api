@@ -1,6 +1,6 @@
 #Smartbots PHP API
 
-- [Smartbots PHP API](#)
+- [Download](https://github.com/alexmayo/smartbots-php-api/blob/master/smartbots_api.php)
 	- [Getting Started](#Getting-Started)
 	- [Performing Actions](#Performing-Actions)
 	- [Multiple Bots](#Multiple-Bots)
