@@ -125,7 +125,7 @@ SOFTWARE.
 				// Add the necessary query array parameters.
 				$this->sb_QueryArray["data"] = $data;
 				// If it is set, add the custom query parameter.
-				$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+				$this->sb_QueryArray["custom"] = $custom;
 				// Do the command and return the output.
 				return $this->run();
 			}
@@ -136,7 +136,7 @@ SOFTWARE.
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "login";
 			$this->sb_QueryArray["location"] = $location;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -145,7 +145,7 @@ SOFTWARE.
 			// Clean the current query array.
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "logout";
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -156,7 +156,7 @@ SOFTWARE.
 			$this->sb_Action = "set_http_callback";
 			$this->sb_QueryArray["url"] = $url;
 			$this->sb_QueryArray["events"] = $events;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -165,7 +165,7 @@ SOFTWARE.
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "activate_group";
 			$this->sb_QueryArray["groupuuid"] = $groupuuid;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -175,7 +175,7 @@ SOFTWARE.
 			$this->sb_Action = "attachment_touch";
 			$this->sb_QueryArray["objectname"] = $objectname;
 			$this->sb_QueryArray["linkset"] = $linkset;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -186,7 +186,7 @@ SOFTWARE.
 			$this->sb_QueryArray["skipnames"] = $skipnames;
 			$this->sb_QueryArray["matchnames"] = $matchnames;
 			$this->sb_QueryArray["matchuuid"] = $matchuuid;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -198,7 +198,7 @@ SOFTWARE.
 			$this->sb_QueryArray["skipnames"] = $skipnames;
 			$this->sb_QueryArray["matchnames"] = $matchnames;
 			$this->sb_QueryArray["matchuuid"] = $matchuuid;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -210,7 +210,7 @@ SOFTWARE.
 			$this->sb_QueryArray["skipnames"] = $skipnames;
 			$this->sb_QueryArray["matchnames"] = $matchnames;
 			$this->sb_QueryArray["matchuuid"] = $matchuuid;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -220,7 +220,7 @@ SOFTWARE.
 			$this->sb_Action = "give_inventory";
 			$this->sb_QueryArray["avatar"] = $avatar;
 			$this->sb_QueryArray["object"] = $object;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -231,7 +231,7 @@ SOFTWARE.
 			$this->sb_QueryArray["avatar"] = $avatar;
 			$this->sb_QueryArray["amount"] = $amount;
 			$this->sb_QueryArray["comment"] = $comment;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -242,7 +242,7 @@ SOFTWARE.
 			$this->sb_QueryArray["object_uuid"] = $object_uuid;
 			$this->sb_QueryArray["amount"] = $amount;
 			$this->sb_QueryArray["object_name"] = $object_name;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -252,7 +252,7 @@ SOFTWARE.
 			$this->sb_Action = "group_eject";
 			$this->sb_QueryArray["avatar"] = $avatar;
 			$this->sb_QueryArray["groupuuid"] = $groupuuid;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -265,7 +265,7 @@ SOFTWARE.
 			$this->sb_QueryArray["roleuuid"] = $roleuuid;
 			$this->sb_QueryArray["check_membership"] = $check_membership;
 			$this->sb_QueryArray["message"] = $message;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -274,7 +274,7 @@ SOFTWARE.
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "group_join";
 			$this->sb_QueryArray["groupuuid"] = $groupuuid;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -283,7 +283,7 @@ SOFTWARE.
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "group_leave";
 			$this->sb_QueryArray["groupuuid"] = $groupuuid;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -293,16 +293,17 @@ SOFTWARE.
 			$this->sb_Action = "im";
 			$this->sb_QueryArray["slname"] = $slname;
 			$this->sb_QueryArray["message"] = $message;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
-		// key2name(key(required), custom(optional))
-		public function key2name($key = "", $custom = "") {
+		// key2name(key(required), request_case(optional), custom(optional))
+		public function key2name($key = "", $request_case = "", $custom = "") {
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "key2name";
 			$this->sb_QueryArray["key"] = $key;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["request_case"] = $request_case;
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -311,7 +312,7 @@ SOFTWARE.
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "list_group_roles";
 			$this->sb_QueryArray["groupuuid"] = $groupuuid;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -319,7 +320,7 @@ SOFTWARE.
 		public function listgroups($custom = "") {
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "listgroups";
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -329,7 +330,7 @@ SOFTWARE.
 			$this->sb_Action = "listinventory";
 			$this->sb_QueryArray["uuid"] = $uuid;
 			$this->sb_QueryArray["extended"] = $extended;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -339,16 +340,17 @@ SOFTWARE.
 			$this->sb_Action = "move";
 			$this->sb_QueryArray["instruction"] = $instruction;
 			$this->sb_QueryArray["param1"] = $param1;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
-		// name2key(name(required), custom(optional))
-		public function name2key($name = "", $custom = "") {
+		// name2key(name(required), request_case(optional), custom(optional))
+		public function name2key($name = "", $request_case = "", $custom = "") {
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "name2key";
 			$this->sb_QueryArray["name"] = $name;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["request_case"] = $request_case;
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -358,7 +360,7 @@ SOFTWARE.
 			$this->sb_Action = "offer_friendship";
 			$this->sb_QueryArray["avatar"] = $avatar;
 			$this->sb_QueryArray["message"] = $message;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -368,7 +370,7 @@ SOFTWARE.
 			$this->sb_Action = "offer_teleport";
 			$this->sb_QueryArray["avatar"] = $avatar;
 			$this->sb_QueryArray["message"] = $message;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -379,7 +381,7 @@ SOFTWARE.
 			$this->sb_QueryArray["x"] = $x;
 			$this->sb_QueryArray["y"] = $y;
 			$this->sb_QueryArray["getvalue"] = $getvalue;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -387,7 +389,7 @@ SOFTWARE.
 		public function rebake($custom = "") {
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "rebake";
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -398,7 +400,7 @@ SOFTWARE.
 			$this->sb_QueryArray["channel"] = $channel;
 			$this->sb_QueryArray["object"] = $object;
 			$this->sb_QueryArray["button"] = $button;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -408,7 +410,7 @@ SOFTWARE.
 			$this->sb_Action = "say_chat_channel";
 			$this->sb_QueryArray["channel"] = $channel;
 			$this->sb_QueryArray["message"] = $message;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -418,7 +420,7 @@ SOFTWARE.
 			$this->sb_Action = "send_group_im";
 			$this->sb_QueryArray["groupuuid"] = $groupuuid;
 			$this->sb_QueryArray["message"] = $message;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -430,7 +432,7 @@ SOFTWARE.
 			$this->sb_QueryArray["subject"] = $subject;
 			$this->sb_QueryArray["text"] = $text;
 			$this->sb_QueryArray["attachment"] = $attachment;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -441,7 +443,7 @@ SOFTWARE.
 			$this->sb_QueryArray["groupuuid"] = $groupuuid;
 			$this->sb_QueryArray["roleuuid"] = $roleuuid;
 			$this->sb_QueryArray["member"] = $member;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -451,7 +453,7 @@ SOFTWARE.
 			$this->sb_Action = "sit";
 			$this->sb_QueryArray["uuid"] = $uuid;
 			$this->sb_QueryArray["save"] = $save;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -460,7 +462,7 @@ SOFTWARE.
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "takeoff";
 			$this->sb_QueryArray["uuid"] = $uuid;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -469,7 +471,7 @@ SOFTWARE.
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "teleport";
 			$this->sb_QueryArray["location"] = $location;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -478,7 +480,7 @@ SOFTWARE.
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "touch_prim";
 			$this->sb_QueryArray["uuid"] = $uuid;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -490,7 +492,7 @@ SOFTWARE.
 			$this->sb_QueryArray["y"] = $y;
 			$this->sb_QueryArray["z"] = $z;
 			$this->sb_QueryArray["precision"] = $precision;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
@@ -499,7 +501,7 @@ SOFTWARE.
 			$this->sb_QueryArray = array();
 			$this->sb_Action = "wear";
 			$this->sb_QueryArray["uuid"] = $uuid;
-			$this->sb_QueryArray["custom"] = $custom != "" ? $custom : "";
+			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
 
