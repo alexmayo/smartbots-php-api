@@ -220,12 +220,12 @@ This section shows all of the available actions which you can use with this API.
 | group_join        	| ``` group_join( groupuuid*, custom ); ```                                                  |
 | group_leave       	| ``` group_leave( groupuuid*, custom ); ```                                                 |
 | im                	| ``` im( slname*, message*, custom ); ```                                                   |
-| key2name          	| ``` key2name( key*, custom ); ```                                                          |
+| key2name          	| ``` key2name( key*, request_case, custom ); ```                                            |
 | list_group_roles  	| ``` list_group_roles( groupuuid*, custom ); ```                                            |
 | listgroups        	| ``` listgroups( custom ); ```                                                              |
 | listinventory     	| ``` listinventory( uuid, extended, custom ); ```                                           |
 | move              	| ``` move( instruction*, param1*, custom ); ```                                             |
-| name2key          	| ``` name2key( name*, custom ); ```                                                         |
+| name2key          	| ``` name2key( name*, request_case, custom ); ```                                           |
 | offer_friendship  	| ``` offer_friendship( avatar*, message, custom ); ```                                      |
 | offer_teleport    	| ``` offer_teleport( avatar*, message, custom ); ```                                        |
 | parcel_info       	| ``` parcel_info( x, y, getvalue, custom ); ```                                             |
