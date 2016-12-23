@@ -213,6 +213,14 @@ SOFTWARE.
 			$this->sb_QueryArray["custom"] = $custom;
 			return $this->run();
 		}
+		
+		// get_balance(custom(optional))
+		public function get_balance($custom = "") {
+			$this->sb_QueryArray = array();
+			$this->sb_Action = "get_balance";
+			$this->sb_QueryArray["custom"] = $custom;
+			return $this->run();
+		}
 
 		// give_inventory(avatar(required), object(required), custom(optional))
 		public function give_inventory($avatar = "", $object = "", $custom = "") {
