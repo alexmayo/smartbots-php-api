@@ -212,7 +212,7 @@ This section shows all of the available actions which you can use with this API.
 | attachments       	| ``` attachments( skipnames, matchnames, matchuuid, custom ); ```                   	     |
 | avatar_groups     	| ``` avatar_groups( avatar*, skipnames, matchnames, matchuuid, custom ); ```        	     |
 | avatar_picks      	| ``` avatar_picks( avatar*, skipnames, matchnames, matchuuid, custom ); ```         	     |
-| get_balance    	| ``` get_balance(custom ); ```         		                               	     |
+| get_balance    	| ``` get_balance( custom ); ```         		                               	     |
 | give_inventory    	| ``` give_inventory( avatar*, object*, custom ); ```                                	     |
 | give_money        	| ``` give_money( avatar*, amount*, comment, custom ); ```                                   |
 | give_money_object 	| ``` give_money_object( object_uuid*, amount*, object_name, custom ); ```                   |
