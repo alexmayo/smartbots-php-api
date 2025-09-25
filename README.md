@@ -5,9 +5,6 @@
 	- [Performing Actions](#Performing-Actions)
 	- [Multiple Bots](#Multiple-Bots)
 	- [Available Actions](#Available-Actions)
-- [Demo](http://renderworks-sl.com/smartbots_php_api#Live_Demo)
-- [Support](http://renderworks-sl.com/smartbots_php_api/#Support)
-- [Licensing](http://renderworks-sl.com/smartbots_php_api/#License)
 	
 ## <a name="Getting-Started">Getting Started</a>
 
@@ -75,10 +72,10 @@ We've made it really easy to perform actions with your SmartBot, for example it'
 
 ---
 
-To send an Instant Message from your bot, you use the `im()` method on your `$bot` variable. For example the below will send an IM to GTASkinCentral Resident with a message of "Hello world!".
+To send an Instant Message from your bot, you use the `im()` method on your `$bot` variable. For example the below will send an IM to Alexander Pixels with a message of "Hello world!".
 
 ```php
-$bot->im("GTASkinCentral Resident", "Hello World!"); // Send an IM to GTASkinCentral Resident.
+$bot->im("Alexander Pixels", "Hello World!"); // Send an IM to Alexander Pixels.
 ```
 
 ---
@@ -106,7 +103,7 @@ result=OK&action=im
 Again, we can use a simple 'if' statement to see if an acton was successful or not. This is done by checking whether or not the 'result' parameter in the response is set to `TRUE` or `FALSE`.
 
 ```php
-if($bot->im("GTASkinCentral Resident", "Hello World!") == TRUE) { // If the action was successful.
+if($bot->im("Alexander Pixels", "Hello World!") == TRUE) { // If the action was successful.
 	echo "Success!".
 } else { // If the action failed.
 	echo "Fail!".
@@ -127,7 +124,7 @@ Array (
 	[action] => key2name
 	[result] => OK
 	[key] => 4d9ce772-d3ee-4cce-9555-bfb06ffcb228
-	[name] => gtaskincentral resident
+	[name] => alexander pixels
 	[custom] => Custom Text
 )
 ```
@@ -148,7 +145,7 @@ At the end of this section, your code could look a little something like this:
 	$bot = new SmartBot(); // Instansiate a new SmartBot class.
 	$bot->setup($apiKey, $botName, $botAccessCode); // Pass the setup variables to the API.
 
-	$bot->im("GTASkinCentral Resident", "Hello World!"); // Send an IM to GTASkinCentral Resident.
+	$bot->im("Alexander Pixels", "Hello World!"); // Send an IM to Alexander Pixels.
 
 	$bot->key2name("4d9ce772-d3ee-4cce-9555-bfb06ffcb228", "Custom Text"); // Send the key2name command.
 	print_r($bot->response()); // Print the result.
